@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>EduSphere — A New Horizon for Learning</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">✦</span> EduSphere</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="index.html#features">Features</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div data-auth-area style="display:flex; gap:10px;"></div>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container">
+    <div>
+      <span class="eyebrow">🎓 500+ students already joined</span>
+      <h1>Learn <span>new skills</span> at your own pace, from anywhere</h1>
+      <p>Web development, data science, design and business — learn hands-on from expert instructors and keep all your notes in one place.</p>
+      <div class="hero-actions">
+        <a href="register.html" class="btn btn-accent">Start for free</a>
+        <a href="courses.html" class="btn btn-outline" style="border-color:rgba(255,255,255,0.3); color:#fff;">Browse courses</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>6+</b><span>Courses</span></div>
+        <div><b>18+</b><span>Lessons</span></div>
+        <div><b>4.9★</b><span>Avg. rating</span></div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <svg class="path-svg" viewBox="0 0 420 420">
+        <path class="dash" d="M40,340 C120,260 100,160 200,140 C300,120 300,60 380,40" stroke="rgba(255,255,255,0.25)" stroke-width="2" fill="none"/>
+        <circle cx="40" cy="340" r="5" fill="#FF7A59"/>
+        <circle cx="200" cy="140" r="5" fill="#4F46E5"/>
+        <circle cx="380" cy="40" r="5" fill="#8B5CF6"/>
+      </svg>
+      <div class="orbit-card c1"><b>💻 Web Development</b><span>4 modules</span></div>
+      <div class="orbit-card c2"><b>📊 Data Science</b><span>3 modules</span></div>
+      <div class="orbit-card c3"><b>📝 My Notes</b><span>12 saved</span></div>
+      <div class="orbit-card c4"><b>🎨 UI/UX Design</b><span>New course</span></div>
+    </div>
+  </div>
+</header>
+
+<section class="section section-bg" id="features">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Why EduSphere</span>
+      <h2>The complete learning experience, in one platform</h2>
+      <p>From secure accounts to note-taking on every lesson — everything is designed for students.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔐</div>
+        <h3>Secure accounts</h3>
+        <p>Safe registration and login for students, teachers, and admins alike.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🎓</div>
+        <h3>Easy enrollment</h3>
+        <p>Enroll in a course with one click and access every lesson and resource.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">🔍</div>
+        <h3>Smart search</h3>
+        <p>Find the right course instantly by name or category.</p>
+      </div>
+      <div class="feature-card reveal">
+        <div class="feature-icon">📝</div>
+        <h3>Personal notes</h3>
+        <p>Save important points from every lesson right on your dashboard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Popular courses</span>
+      <h2>Start learning today</h2>
+      <p>Browse courses built by our expert instructors.</p>
+    </div>
+    <div class="course-grid" id="courseGrid"></div>
+    <div style="text-align:center; margin-top:40px;">
+      <a href="courses.html" class="btn btn-primary">View all courses →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" class="brand" style="color:#fff; margin-bottom:14px; display:inline-flex;"><span class="brand-mark">✦</span> EduSphere</a>
+        <p style="font-size:13.5px; max-width:280px; margin-top:10px;">Our mission is to make quality online education accessible to everyone.</p>
+      </div>
+      <div>
+        <h4>Platform</h4>
+        <a href="courses.html">Courses</a>
+        <a href="register.html">Register</a>
+        <a href="login.html">Login</a>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <a href="courses.html">Web Development</a>
+        <a href="courses.html">Data Science</a>
+        <a href="courses.html">Design</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="#">hello@edusphere.com</a>
+        <a href="#">Support center</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2026 EduSphere. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/courses.js"></script>
+<script>document.addEventListener("DOMContentLoaded", initAuthState);</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — EduSphere</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">✦</span> EduSphere</a>
+    <nav class="side-nav">
+      <a href="dashboard.html" class="active"><span class="ic">🏠</span> Dashboard</a>
+      <a href="courses.html"><span class="ic">📚</span> Courses</a>
+      <a href="notes.html"><span class="ic">📝</span> My Notes</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-user" data-sidebar-user></div>
+      <button class="logout-btn" data-logout>🚪 Log out</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <div class="topbar">
+      <div style="display:flex; align-items:center; gap:14px;">
+        <button class="mobile-menu-btn">☰</button>
+        <div>
+          <h1>Hello, <span id="welcomeName">...</span> 👋</h1>
+          <p>Here's your learning progress at a glance</p>
+        </div>
+      </div>
+      <a href="courses.html" class="btn btn-primary">+ Find a new course</a>
+    </div>
+
+    <div class="stat-grid">
+      <div class="stat-card">
+        <div class="top"><div class="stat-icon" style="background:var(--primary-light);color:var(--primary)">📚</div></div>
+        <h3 id="statCourses">0</h3><span>Enrolled courses</span>
+      </div>
+      <div class="stat-card" style="animation-delay:.05s">
+        <div class="top"><div class="stat-icon" style="background:var(--accent-light);color:var(--accent)">📈</div></div>
+        <h3 id="statProgress">0%</h3><span>Average progress</span>
+      </div>
+      <div class="stat-card" style="animation-delay:.1s">
+        <div class="top"><div class="stat-icon" style="background:var(--success-light);color:var(--success)">🏆</div></div>
+        <h3 id="statCompleted">0</h3><span>Completed courses</span>
+      </div>
+      <div class="stat-card" style="animation-delay:.15s">
+        <div class="top"><div class="stat-icon" style="background:#FFF4E0;color:#D97706">📝</div></div>
+        <h3 id="statNotes">0</h3><span>Total notes</span>
+      </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns:1.5fr 1fr; gap:24px; align-items:start;">
+      <div class="card">
+        <div class="card-title"><span>My Courses</span> <a href="courses.html" style="font-size:13px;color:var(--primary)">View all →</a></div>
+        <div id="enrolledList"></div>
+      </div>
+
+      <div class="card">
+        <div class="card-title"><span>Recent Notes</span> <a href="notes.html" style="font-size:13px;color:var(--primary)">View all →</a></div>
+        <div id="recentNotes"></div>
+      </div>
+    </div>
+  </main>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

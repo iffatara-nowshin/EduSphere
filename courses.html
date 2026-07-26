@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Courses — EduSphere</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand"><span class="brand-mark">✦</span> EduSphere</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html" class="active">Courses</a></li>
+      <li><a href="index.html#features">Features</a></li>
+    </ul>
+    <div class="nav-actions">
+      <div data-auth-area style="display:flex; gap:10px;"></div>
+      <button class="nav-toggle">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header style="background:var(--navy); padding:60px 0 40px; color:#fff;">
+  <div class="container">
+    <h1 style="color:#fff; font-size:32px;">Browse all courses</h1>
+    <p style="color:#B7B9E0; margin-top:10px;">Find your next course by name or category</p>
+    <div style="margin-top:24px; max-width:480px; position:relative;">
+      <input type="text" id="courseSearch" placeholder="🔍  Search courses by name..."
+        style="width:100%; padding:15px 20px; border-radius:100px; border:none; font-size:14.5px;">
+    </div>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="pill-row" id="categoryPills"></div>
+    <div class="course-grid" id="courseGrid"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-bottom">© 2026 EduSphere. All rights reserved.</div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/courses.js"></script>
+<script>document.addEventListener("DOMContentLoaded", initAuthState);</script>
+</body>
+</html>

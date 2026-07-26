@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Notes — EduSphere</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="app-shell">
+  <aside class="sidebar">
+    <a href="index.html" class="brand"><span class="brand-mark">✦</span> EduSphere</a>
+    <nav class="side-nav">
+      <a href="dashboard.html"><span class="ic">🏠</span> Dashboard</a>
+      <a href="courses.html"><span class="ic">📚</span> Courses</a>
+      <a href="notes.html" class="active"><span class="ic">📝</span> My Notes</a>
+    </nav>
+    <div class="sidebar-footer">
+      <div class="sidebar-user" data-sidebar-user></div>
+      <button class="logout-btn" data-logout>🚪 Log out</button>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <div class="topbar">
+      <div style="display:flex; align-items:center; gap:14px;">
+        <button class="mobile-menu-btn">☰</button>
+        <div>
+          <h1>My Notes 📝</h1>
+          <p>Save the important points while you study</p>
+        </div>
+      </div>
+      <button class="btn btn-primary" id="addNoteBtn">+ New note</button>
+    </div>
+
+    <div class="notes-grid" id="notesGrid"></div>
+  </main>
+</div>
+
+<!-- Add / Edit note modal -->
+<div class="modal-overlay" id="noteModalOverlay">
+  <div class="modal">
+    <div class="modal-head">
+      <h3 id="modalTitle">Add a new note</h3>
+      <button class="modal-close" data-close-modal>✕</button>
+    </div>
+    <form id="noteForm">
+      <div class="field">
+        <label for="noteTitle">Title</label>
+        <input type="text" id="noteTitle" placeholder="e.g. JavaScript Closures" required>
+      </div>
+      <div class="field">
+        <label for="noteCourseSelect">Course (optional)</label>
+        <select id="noteCourseSelect"></select>
+      </div>
+      <div class="field">
+        <label for="noteContent">Write your note</label>
+        <textarea id="noteContent" rows="6" placeholder="Write the important points here..."></textarea>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="noteImportant">
+        <label for="noteImportant" style="margin:0;">⭐ Mark as important</label>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Save note</button>
+    </form>
+  </div>
+</div>
+
+<script src="js/main.js"></script>
+<script src="js/notes.js"></script>
+</body>
+</html>
